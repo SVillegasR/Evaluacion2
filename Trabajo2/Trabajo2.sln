@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reactional", "Reactional.csproj", "{2CCE7ED6-1331-EC20-E514-BA1634DA30B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{BC1966E6-EB80-DD77-CEA9-D83570BEBCF6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2CCE7ED6-1331-EC20-E514-BA1634DA30B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CCE7ED6-1331-EC20-E514-BA1634DA30B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CCE7ED6-1331-EC20-E514-BA1634DA30B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CCE7ED6-1331-EC20-E514-BA1634DA30B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC1966E6-EB80-DD77-CEA9-D83570BEBCF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC1966E6-EB80-DD77-CEA9-D83570BEBCF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC1966E6-EB80-DD77-CEA9-D83570BEBCF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC1966E6-EB80-DD77-CEA9-D83570BEBCF6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
