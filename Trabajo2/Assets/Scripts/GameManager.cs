@@ -5,19 +5,30 @@ using TMPro;
 using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
-    public TMP_Text infoText;
-    public AudioSource musicSource;
-
+    public TMP_Text nombreJugadorText;
+    public TMP_Text dificultadText;
+    public AudioSource backgroundMusic;
     void Start()
     {
-        string name = MenuManager.playerName;
-        int difficulty = MenuManager.difficultyIndex;
-        float volume = MenuManager.volumeLevel;
+        // Obtener datos guardados
+        string nombre = PlayerPrefs.GetString("Nombre", "Jugador");
+        int dificultad = PlayerPrefs.GetInt("Dificultad", 0); // 0: Fácil, 1: Media, 2: Difícil
+        float volumen = PlayerPrefs.GetFloat("Volumen", 1f);  // Por defecto volumen completo
+        backgroundMusic.volume = volumen;
+        // Mostrar nombre del jugador
+        if (nombreJugadorText != null)
+            nombreJugadorText.text = "Jugador: " + nombre;
 
-        musicSource.volume = volume;
+        // Mostrar dificultad
+        if (dificultadText != null)
+        {
+            string dificultadStr = "Fácil";
+            if (dificultad == 1) dificultadStr = "Media";
+            else if (dificultad == 2) dificultadStr = "Difícil";
 
-        string difficultyText = difficulty == 0 ? "Fácil" : difficulty == 1 ? "Medio" : "Difícil";
-        infoText.text = $"Jugador: {name} | Dificultad: {difficultyText}";
+            dificultadText.text = "Dificultad: " + dificultadStr;
+        }
+
+        
     }
-
 }
